@@ -1,0 +1,39 @@
+#message{
+    text-align: center;
+    font-family: 'Assistant', sans-serif;
+    font-size: 13px;
+    color: gray;
+}
+#title{
+    font-family: 'Assistant', sans-serif;
+    font-style: normal;
+    font-size: 40px;
+    font-weight: lighter;
+}
+#titlebox{
+    width: 80%;
+    margin: auto;
+}
+#productbox{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    width: 80%;
+    margin: auto;
+}
+#productbox>div>h5{
+    font-family: 'Assistant', sans-serif;
+    font-weight: lighter;
+    color: brown;
+    margin-top: 10px;
+}
+h5+h3{
+    font-family: 'Assistant', sans-serif;
+    font-weight: lighter;
+    margin-top: -5px;
+    
+}
+img{
+    height: 400px;
+    width: 100%;
+}
