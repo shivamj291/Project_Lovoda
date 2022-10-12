@@ -176,9 +176,11 @@ hr{
 }
 #feedImageBlock img{
     width: 200px;
+    height: 200px;
 }
 #feedImageBlock>#bigImageFeed{
     width: 405px;
+    height: 405px;
 }
 #feedLink{
     color: blue;
