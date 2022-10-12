@@ -6,6 +6,18 @@ body {
     margin: 0;
     padding: 0;
     }
+#chatBox{
+    width: 120px;
+    background-color: #44594f;;
+    color: white;
+    padding: 1px 5px;
+    border-radius: 40px;
+    text-align: center;
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+    z-index: 100;
+}
 #navbar>p{
     margin-left: 10px;
     margin-right: 10px;
@@ -88,13 +100,13 @@ hr{
     cursor: pointer;
     outline: 1px solid white;
 }
-#inbox>p{
+#productbox>div>p{
     font-weight: 300;
 }
-#inbox>h4{
+#productbox>div>h4{
     font-weight: 500;
 }
-#items{
+#productbox{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 10px;
@@ -102,40 +114,83 @@ hr{
     margin: auto;
     margin-top: 40px;
 }
-#top{
+#productbox>div>img{
     position: absolute;
     width: 255px;
 }
-#hoverImage{
+#productbox>div>div>img{
     position: relative;
     opacity: 0;
     transition: transform 1s; 
     object-fit: cover;
     width: 100%;
 }
-#hoverImage:hover{
+#productbox>div>div>img:hover{
     opacity: 1;
     transition: transform 1s;
 }
-.overlay {
+#productbox>div>div {
     position: relative;
     overflow: hidden;
 }
-.overlay img {
+#productbox>div>div>img{
     vertical-align: top;
     max-width: 100%;
 }
-.overlay:hover img {
+#productbox>div>div:hover img {
     transform: scale(1.1);
 }
 
+/* Shop the feed */
+#shopFeedHeading{
+    padding: 4%;
+    text-align: center;
+}
+#shopFeedHeading h1,p{
+    font-weight: 450;
+}
+#followUs{
+    text-align: center;
+}
+.bigBlock{
+    display: flex;
+    margin-left: 15%;
+}
+#feedParentBox{
+    padding-bottom: 150px;
+}
+.colRowGrid{
+    grid-row: span 2;
+    grid-column: span 2;
+}
+#feedImageBlock{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    width: 40%;
+    gap: 5px;
+    margin-top: 5px;
+}
+#feedImageBlock img{
+    width: 200px;
+}
+#feedImageBlock>#bigImageFeed{
+    width: 405px;
+}
+#feedLink{
+    color: blue;
+    text-decoration: underline;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
 
-
-
+/* Footer */
 #footer{
     display: flex;
-    /* justify-content: space-between; */
     margin: 0 15%;
+    padding-top: 36px;
+    padding-bottom: 36px;
 }
 #footer p{
     row-gap: 6rem;
@@ -171,4 +226,16 @@ hr{
 }
 #contacts{
     margin-left: 15%;
+}
+#paymentMethod{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 1px;
+    margin: 32%;
+    margin-top: 35px;
+    margin-bottom: 0px;
+}
+#copywrite{
+    font-size: 12px;
+    text-align: center;
 }
