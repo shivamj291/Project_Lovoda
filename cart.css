@@ -139,7 +139,7 @@ margin-top: 40px;
     border-radius: 10px;
     border: none;
     background-color:rgb(31, 187, 187);
-    color: black;
+    color: rgb(240, 229, 229);
     cursor: pointer;
 
 }
@@ -150,7 +150,7 @@ margin-top: 40px;
 
 #afterpay:hover{
     padding: 3px 7px;
-    color: red;
+    color: rgb(253, 251, 251);
 
 }
 #bt p{
@@ -314,4 +314,15 @@ cursor: pointer;
 #subbtn:hover{
     padding: 5px 5px;
     background-color: rgb(31, 29, 29);
+}
+#palette{
+    color: rgb(46, 44, 44);
+  
+    
+}
+#palette:hover{
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+    color: rgb(46, 49, 236);
+   
 }
