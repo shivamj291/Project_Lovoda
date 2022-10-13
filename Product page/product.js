@@ -107,7 +107,9 @@ document.querySelector("#mycart").addEventListener("click",function(){
     // window.location.href = "dummycart.html";
     alert("Please coonect cart page now");
     });
-
+document.getElementById("checkout").addEventListener("click",()=>{
+    window.location.href = "file:///C:/Users/Pratik%20Patil/Documents/VS%20Code/Project_Lovoda/Project_Lovoda/payment.html";
+})
 
 //div => img1,img2,img3
 //div => text all
