@@ -291,3 +291,27 @@ cursor: pointer;
     text-decoration: underline;
     text-underline-offset: 0.3rem;
 }
+#addbtn{
+    padding: 4px 12px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#subbtn{
+    padding: 4px 5px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#addbtn:hover{
+    padding: 5px 13px;
+    background-color: rgb(31, 29, 29);
+}
+#subbtn:hover{
+    padding: 5px 5px;
+    background-color: rgb(31, 29, 29);
+}
