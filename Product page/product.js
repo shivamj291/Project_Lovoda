@@ -21,6 +21,8 @@ imagediv.append(img1,sec_img_div);
 
 var infodiv = document.createElement("div");
 
+var proj = document.createElement("p");
+proj.innerText = "LOVODA";
 var productname = document.createElement("h1");
 productname.innerText = product[0].name;
 
@@ -48,7 +50,7 @@ que.setAttribute("id","que");
 var productprice = document.createElement("h3");
 productprice.innerText = "$"+product[0].price;
 
-infodiv.append(productname,stardiv,que,productprice);
+infodiv.append(proj,productname,stardiv,que,productprice);
 
 document.querySelector("#parentbox").append(imagediv);
 document.querySelector("#product_detail").append(infodiv);

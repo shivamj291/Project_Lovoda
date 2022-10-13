@@ -146,6 +146,13 @@ hr{
 		color: $quantity-btn-color;
 	} */
 }
+#product_detail>div>p:first-child{
+    font-family: 'Assistant', sans-serif;
+    font-size: 10px;
+    color: gray ;
+
+}
+
 
 
 
