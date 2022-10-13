@@ -49,8 +49,11 @@ cursor: pointer;
 }
 
 #urcart{
-    
+    font-family: assistant,sans-serif;
     margin-left: 100px;
+    
+    
+   
 }
 #continueshopping{
     margin-left: 50%;
@@ -139,6 +142,7 @@ margin-top: 40px;
 #bt p{
     margin-top: 30px;
     margin-left: 20px;
+    font-family: assistant,sans-serif;
 }
 #para{
     margin-left: 74%;
@@ -149,46 +153,117 @@ margin-top: 40px;
     margin-right: 40px;
 }
 #checkout{
-    padding: 10px 100px;
+    padding: 15px 100px;
     cursor: pointer;
     border: none;
     background-color: black;
     color: white;
 }
 #shoppay{
-    padding: 10px 100px;
+    padding: 15px 100px;
     cursor: pointer;
     border: none;
     background-color: blue;
     color: white;
 }
 #paypal{
-    padding: 10px 105px;
+    padding: 15px 105px;
     cursor: pointer;
     border: none;
     background-color: rgb(235, 220, 17);
     color: white;
 }
 #gpay{
-    padding: 10px 110px;
+    padding: 15px 110px;
     cursor: pointer;
     border: none;
     background-color: black;
     color: white;
 }
 #checkout:hover{
-    padding: 11px 101px;
+    padding: 15px 101px;
+    background-color: rgb(28, 30, 31);
 }
 #shoppay:hover{
-    padding: 11px 101px;
+    padding: 15px 101px;
+    background-color: rgb(60, 60, 190);
 }
 #paypal:hover{
-    padding: 11px 106px;
+    padding: 15px 106px;
+    background-color: rgb(230, 230, 65);
 }
 #gpay:hover{
-    padding: 11px 111px;
+    padding: 15px 111px;
+    background-color: rgb(36, 35, 35);
 }
 span{
     text-decoration: underline;
     text-underline-offset: 0.3rem;
+}
+#fifthbox {
+
+display: flex;
+    grid-template-columns: repeat(4,1fr);
+    gap: 0px;
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+
+}
+#fifthbox img{
+    width: 90%;
+    border: 0.1px solid rgb(177, 171, 171);
+grid-template-columns: repeat(4,1fr);
+cursor: pointer;
+
+}h2{
+    margin-left: 50px;
+    color: rgb(68, 61, 61);
+}
+#fifthbox img:hover{
+    transition: transform 0.8s;
+    transform: scale(1.07);
+}
+#footer{
+    display: flex;
+    /* justify-content: space-between; */
+    margin: 0 15%;
+}
+#footer p{
+   
+    color: grey;
+    
+}
+#footer #pBold{
+    color: rgb(68, 68, 68);
+    font-weight: bolder;
+
+}
+#mailBox{
+    border: 1px solid rgb(187, 179, 179);
+    width: 400px;
+    border-radius: 1px;
+    display: flex;
+    align-items: center;
+}
+#mailBox a{
+    margin-left: 35%;
+    color: black;
+    font-size: 14px;
+    transition: transform 0.2s;
+    text-decoration: none;
+}
+#mailBox i{
+    display: grid;
+    margin: 12px;
+    margin-left: 325px;
+    justify-content:flex-end;
+    /* margin-right: 10px; */
+    align-content: center;
+}
+#contacts{
+    margin-left: 15%;
+}
+#payment{
+    text-align: center;
 }
