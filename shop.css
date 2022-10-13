@@ -131,6 +131,47 @@ hr{
     border: none;
     margin-left: 20px;
 }
+/* trial */
+#priceBox{
+    width: 300px;
+    max-height: 55rem;
+    margin-top: 10px;
+    border: 1px solid rgb(187, 186, 186);
+    display: none;
+}
+#priceBox>div{
+    display: flex;
+}
+#upperBox{
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+button{
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+}
+#priceBox p{
+    font-size: 14px;
+}
+#priceBox>div>input{
+    width: 40%;
+    margin: 5px;
+    padding: 5px 10px;
+}
+#priceBox>div~div{
+    height: 50px;
+}
+#upperBox>h5{
+    font-weight: 400;
+    text-decoration: underline;
+}
+hr{
+    color: rgb(187, 186, 186);
+}
+/* trial */
 #sort{
     display: flex;
     /* border: 2px solid blueviolet; */
