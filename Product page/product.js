@@ -55,7 +55,36 @@ infodiv.append(proj,productname,stardiv,que,productprice);
 document.querySelector("#parentbox").append(imagediv);
 document.querySelector("#product_detail").append(infodiv);
 
+var plus = document.querySelector(".plus");
+var num = document.querySelector(".num");
+var minus = document.querySelector(".minus");
 
+var qty = 1;
+plus.addEventListener("click",()=>{
+    qty++;
+    num.innerText = qty;
+    product[0].qty = qty;
+})
+
+minus.addEventListener("click",()=>{
+    qty--;
+    num.innerText = qty;
+    product[0].qty = qty;
+})
+
+document.querySelector(".atc").addEventListener("click",()=>{
+    document.getElementById("content").style.display = "block";
+})
+document.querySelector("#hidebox").addEventListener("click",()=>{
+    document.getElementById("content").style.display = "none";
+})
+
+var cartdata = JSON.parse(localStorage.getItem("cartdata")) || [];
+document.querySelector("#mycart").addEventListener("click",function(){
+  cartdata.push(product[0]);
+  console.log(cartdata);
+  localStorage.setItem("cartdata",JSON.stringify(cartdata));
+})
 
 //div => img1,img2,img3
 //div => text all
