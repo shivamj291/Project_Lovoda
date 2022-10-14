@@ -144,11 +144,16 @@ document.getElementById("apply").addEventListener("click",()=>{
     var from = document.querySelector("#from").value;
     var to =  document.querySelector("#to").value;
     var filter = productsdata.filter(function(ele){
-        return (ele.price>from && ele.price>to);
+        return (ele.price>=from && ele.price<=to);
     });
     displaydata(filter);
 })
-
+document.getElementById("reset").addEventListener("click",()=>{
+    document.querySelector("#from").value = "";
+    document.querySelector("#to").value= "";
+    document.getElementById("priceBox").style.display = "none";
+    displaydata(productsdata);
+})
 function SortData(){
     var alpha = document.getElementById("sortby").value;
     if(alpha === "normal"){

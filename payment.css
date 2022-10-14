@@ -55,7 +55,13 @@
 }
 #name{  
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    /* border: 2px solid red; */
+    width: 100%;
+}
+#name>#lname{
+    margin-right: -20px;
+    margin-left: 25px;
 }
 #name>input{
     width: 48%;
@@ -73,6 +79,8 @@
 #code{
     display: flex;
     justify-content: space-between;
+    /* border: 2px solid red; */
+    width: 103%;
 }
 #code>input{ 
     border: 1px solid gray;

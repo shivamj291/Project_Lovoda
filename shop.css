@@ -177,6 +177,10 @@ hr{
 #apply{
     cursor: pointer;
 }
+#reset{
+    cursor: pointer;
+}
+
 /* trial */
 #sort{
     display: flex;
