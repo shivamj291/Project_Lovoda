@@ -209,7 +209,7 @@ hr{
 #checkoutTextBox{
     text-align: right;
 }
-#checkOutBtn>button{
+#checkOutBtn button{
     width: 340px;
     height: 54px;
     margin-bottom: 9px;
@@ -217,7 +217,7 @@ hr{
 #checkout{
     font-size: 15px;
 }
-#checkOutBtn>#checkout{
+#checkOutBtn #checkout{
     color: white;
     background-color: black;
     cursor: pointer;

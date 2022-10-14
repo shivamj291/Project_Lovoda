@@ -131,7 +131,7 @@ var storedata = [];
 function getdata(ele){
     storedata.push(ele);
     localStorage.setItem("product",JSON.stringify(storedata));
-    window.location.href= "file:///C:/Users/Pratik%20Patil/Documents/VS%20Code/Project_Lovoda/Project_Lovoda/Product%20page/product.html";
+    window.location.href= "Product page/product.html";
 } 
 
 document.getElementById("pricebtn").addEventListener("click",()=>{
