@@ -101,12 +101,3 @@ function deletedata(ele){
     displaydata(productdata);
     displayprice(productdata);
 }
-
-
-
-
-
-
-
-
-
