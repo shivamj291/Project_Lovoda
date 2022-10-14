@@ -11,17 +11,23 @@ body {
     margin: 0;
     padding: 0;
     }
-#navbar>p{
+#navbar p{
     margin-left: 10px;
     margin-right: 10px;
     color: rgb(var(--color-foreground));
     font-size: 85%;
+    
 }
-#navbar>p:hover{
-    text-decoration: underline;
+#navbar>a{
+    text-decoration: none;
+    color: rgb(var(--color-foreground));
+}
+#navbar p:hover{
+    text-decoration: none;
     text-underline-offset: 0.3rem;
-    cursor: default;
+    cursor: pointer;
 }
+
 #heading{
     text-align: center;
     font-size: 80%;

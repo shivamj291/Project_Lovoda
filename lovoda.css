@@ -21,7 +21,8 @@ body {
 #navbar p{
     margin-left: 10px;
     margin-right: 10px;
-    color: rgb(var(--color-foreground));
+    /* color: rgb(var(--color-foreground)); */
+    color: gray;
     font-size: 85%;
 }
 #navbar>a{
