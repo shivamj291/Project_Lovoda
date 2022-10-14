@@ -128,7 +128,7 @@ margin-top: 40px;
 }
 #subtotal p{
 
-    margin-left: 30px;
+    margin-left: 125px;
 }
 #bt{
     display: flex;
@@ -239,9 +239,10 @@ cursor: pointer;
     color: rgb(68, 61, 61);
 }
 #fifthbox img:hover{
-    transition: transform 0.8s;
+    transition: transform 0.5s;
     transform: scale(1.07);
 }
+
 #footer{
     display: flex;
     /* justify-content: space-between; */
@@ -325,4 +326,19 @@ cursor: pointer;
     text-underline-offset: 0.3rem;
     color: rgb(46, 49, 236);
    
+}
+#head2{
+    margin-left: 200px;
+}
+#palette2{
+    margin-left: 625px;
+    color: rgb(53, 50, 50);
+    
+   
+}
+#palette2:hover{
+    text-decoration: underline;
+    text-underline-offset: 0.3rem;
+    color: blue;
+    
 }
