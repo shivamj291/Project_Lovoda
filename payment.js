@@ -45,5 +45,6 @@ var finalprice = document.getElementById("finalvalue");
 finalprice.innerText = "$" + (total + 3.36);
 
 document.getElementById("shopall").addEventListener("click",()=>{
+    alert("Order placed Successfully");
     window.location.href = "shop.html";
 })

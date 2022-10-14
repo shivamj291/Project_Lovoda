@@ -1,5 +1,6 @@
 *{
     font-family: 'Assistant', sans-serif;
+    
 }
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -12,7 +13,8 @@ body {
 #navbar p{
     margin-left: 10px;
     margin-right: 10px;
-    color: rgb(var(--color-foreground));
+    /* color: rgb(var(--color-foreground)); */
+    color: gray;
     font-size: 85%;
 }
 #navbar>a{
@@ -175,6 +177,10 @@ hr{
 #apply{
     cursor: pointer;
 }
+#reset{
+    cursor: pointer;
+}
+
 /* trial */
 #sort{
     display: flex;
