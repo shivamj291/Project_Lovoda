@@ -98,21 +98,21 @@ document.querySelector(".atc").addEventListener("click",()=>{
 })
 document.querySelector("#hidebox").addEventListener("click",()=>{
     document.getElementById("content").style.display = "none";
-    window.location.href = "file:///C:/Users/Pratik%20Patil/Documents/VS%20Code/Project_Lovoda/Project_Lovoda/shop.html";
+    window.location.href = "../shop.html";
 })
 
 // var cartdata = JSON.parse(localStorage.getItem("cartdata")) || [];
 
 document.querySelector("#mycart").addEventListener("click",function(){
-    window.location.href = "file:///C:/Users/Pratik%20Patil/Documents/VS%20Code/Project_Lovoda/Project_Lovoda/checkout.html";
+    window.location.href = "../checkout.html";
     // alert("Please coonect cart page now");
     });
 document.getElementById("checkout").addEventListener("click",()=>{
-    window.location.href = "file:///C:/Users/Pratik%20Patil/Documents/VS%20Code/Project_Lovoda/Project_Lovoda/payment.html";
+    window.location.href = "../payment.html";
 })
 
 document.querySelector(".buy").addEventListener("click",()=>{
-    window.location.href = "file:///C:/Users/Pratik%20Patil/Documents/VS%20Code/Project_Lovoda/Project_Lovoda/payment.html";
+    window.location.href = "../payment.html";
 })
 
 //div => img1,img2,img3
