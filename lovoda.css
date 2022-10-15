@@ -18,11 +18,11 @@ body {
     right: 2%;
     z-index: 100;
 }
-
 #navbar p{
     margin-left: 10px;
     margin-right: 10px;
-    color: rgb(var(--color-foreground));
+    /* color: rgb(var(--color-foreground)); */
+    color: gray;
     font-size: 85%;
 }
 #navbar>a{
@@ -49,6 +49,7 @@ hr{
 }
 #icons i{
     margin: 10px;
+    color: #121212;
     
 }
 #mNavbar{
@@ -177,9 +178,11 @@ hr{
 }
 #feedImageBlock img{
     width: 200px;
+    height: 200px;
 }
 #feedImageBlock>#bigImageFeed{
     width: 405px;
+    height: 405px;
 }
 #feedLink{
     color: blue;
@@ -243,5 +246,4 @@ hr{
 #copywrite{
     font-size: 12px;
     text-align: center;
-    padding-bottom: 20px;
 }
