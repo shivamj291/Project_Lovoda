@@ -143,6 +143,7 @@ document.getElementById("pricebtn").addEventListener("click",()=>{
 document.getElementById("apply").addEventListener("click",()=>{
     var from = document.querySelector("#from").value;
     var to =  document.querySelector("#to").value;
+    document.getElementById("priceBox").style.display = "none";
     var filter = productsdata.filter(function(ele){
         return (ele.price>=from && ele.price<=to);
     });

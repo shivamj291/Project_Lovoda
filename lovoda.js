@@ -1,3 +1,12 @@
+document.getElementById("btn").addEventListener("click",()=>{
+    document.getElementById("searchParent").style.display = "block";
+    document.body.style.opacity= ".5";
+    
+})
+document.getElementById("searchClose").addEventListener("click",()=>{
+    document.getElementById("searchParent").style.display = "none";
+    document.body.style.opacity= "1";
+});
 var productsdata = [
     {image : "https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101104-2_1.jpg?v=1659450395",
      hoverimage :"https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L101104-3_1_823x.jpg?v=1659450395",
