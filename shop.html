@@ -4,21 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="checkout.css">
+    <title>All Products-Lovoda</title>
+    <link rel="stylesheet" href="shop.css">
     <script src="https://kit.fontawesome.com/d6f74ce538.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- ChatBox used in whole page -->
-    <div id="chatBox">
-        <h4>Chat with us</h4>
-    </div>
-
-    <!-- heading -->
+    <!-- <p id="message">Free Shipping on Orders Over $75 and Free Returns (US ONLY)</p>
+    <hr color ="gray" size="1px"> -->
     <p id="heading">Free Shipping on Orders Over $75 and Free Returns (US ONLY)</p>
     <hr>
-
-    <!-- Navbar -->
     <div id="mNavbar" >
         <div id="navbar">
             <a href="lovoda.html">
@@ -40,139 +34,94 @@
     <div id="icons">
         <i class="fa-solid fa-magnifying-glass fa-lg" ></i>
         <i class="fa-regular fa-user fa-lg"></i>
-        <i class="fa-solid fa-bag-shopping fa-lg"></i>
-    </div>
-    </div>
-    <hr>
-    <div id="contentBox">
+        <a href="checkout.html">
+            <i class="fa-solid fa-bag-shopping fa-lg"></i>
+        </a>
         
-        <!-- Your Cart -->
-        <div id="yourCart">
-            <div id="yourCartHeading">
-                <h1>Your Cart</h1>
-                <a href="shop.html">
-                    <h4>Continue shopping</h4>
-                </a>
-            </div>
-            <hr>
-            <div id="data12">
-
-            </div>
-            <!-- <div id="cartProducts">
-                <div id="cartProducts-Image"><img src="https://cdn.shopify.com/s/files/1/0627/7388/7215/products/011000098-2__43894_823x.jpg?v=1645115759" alt=""></div>
-                <div id="cartProducts-Description">
-                    <p id="cartProducts-Name">Rays Of Light Hoops</p>
-                    <p id="cartProducts-Price">$16.00</p>
-                </div>
-                <div id="cartJSPart">
-                    <div class="qtybox">
-                        <span class="minus">-</span>
-                        <span class="num">1</span>
-                        <span class="plus">+</span>
-                    </div>
-                    <button id="cartProducts-deleteBtn"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYO0j1l8SYHs37-M7hezIj8zkE7H3E1JkHAw&usqp=CAU" alt=""></button>
-                    <div id="cartProducts-totalPrice"><p>$16.00</p></div>
-                </div>
-            </div> -->
+    </div>
+    </div>
+   <hr>
+    <div id="titlebox">
+        <h1 id="title">
+            All Products
+        </h1>
+    </div>
+    <div id="filter">
+        <div id="price_availability">
+            <h4>Filter:</h4>
+            <!-- trial -->
+            <!-- <select name="" id="price">
+                <option value="">Price</option>
+            </select> -->
+            <button id="pricebtn">Price</button>
+    <div id="priceBox">
+        <div id="upperBox">
+            <p>The Highest price is $100.00</p>
+            <i data-product-id="7566283440367" data-count="3" class="ssw-icon-heart-o ssw-fave-icon ssw-wishlist-element ssw-synchronized" title="Add to wishlist" data-params="{&quot;product_id&quot;:&quot;7566283440367&quot;,&quot;event&quot;:&quot;fave_button&quot;,&quot;page&quot;:&quot;product_profile&quot;,&quot;title&quot;:&quot;Ripple Ring&quot;,&quot;handle&quot;:&quot;ring-21&quot;,&quot;first_variant_id&quot;:42484490698991}" tabindex="0" aria-label="Instagram Gallery" data-variant-id="42484490698991"></i>
+            <h5 id="reset">Reset</h5>
         </div>
-
         <hr>
-        <!-- Checkout buttons -->
-        <div id="parentCheckOut">
-            <div id="checkoutTextBox">
-                <div id="hh">
-                    <h5>Subtotal</h5>
-                    <h4 id="Overallprice">$0.00</h4>
-                </div>
-                <div id="afterpayBox">
-                    <button id="afterpay"><strong>afterpay<></strong> </button>
-                    <p id="textPrice">available for orders between $35 -</p>
-                </div>
-                    <p id="textPrice">$1000</p>
-            <p>Taxes and shipping calculated at checkout</p>
+        <div>
+            <p>$</p>
+            <input id="from" type="From" placeholder="From">
+            <p>$</p>
+            <input id="to" type="To" placeholder="To">
+            <button id="apply">Apply</button>
         </div>
-            <div id="checkOutBtn">
-<<<<<<< HEAD
-                <button id="checkout">Check out</button>
-=======
-                <a href="payment.html">
-                    <button id="checkout">Check out</button>
-                </a>
->>>>>>> main
-                <button id="shoppay"><img src="https://cdn.shopify.com/shopifycloud/help/assets/manual/shop-pay/shop-pay-checkout-button-aaca6e0cd830643b301f23d84dd42c0544864dee645ccee2776c441dee1fea30.png" alt=""></button>
-                <button id="paypal"><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAyNCAzMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWluWU1pbiBtZWV0Ij4KICAgIDxwYXRoIGZpbGw9IiMwMDljZGUiIGQ9Ik0gMjAuOTA1IDkuNSBDIDIxLjE4NSA3LjQgMjAuOTA1IDYgMTkuNzgyIDQuNyBDIDE4LjU2NCAzLjMgMTYuNDExIDIuNiAxMy42OTcgMi42IEwgNS43MzkgMi42IEMgNS4yNzEgMi42IDQuNzEgMy4xIDQuNjE1IDMuNiBMIDEuMzM5IDI1LjggQyAxLjMzOSAyNi4yIDEuNjIgMjYuNyAyLjA4OCAyNi43IEwgNi45NTYgMjYuNyBMIDYuNjc1IDI4LjkgQyA2LjU4MSAyOS4zIDYuODYyIDI5LjYgNy4yMzYgMjkuNiBMIDExLjM1NiAyOS42IEMgMTEuODI1IDI5LjYgMTIuMjkyIDI5LjMgMTIuMzg2IDI4LjggTCAxMi4zODYgMjguNSBMIDEzLjIyOCAyMy4zIEwgMTMuMjI4IDIzLjEgQyAxMy4zMjIgMjIuNiAxMy43OSAyMi4yIDE0LjI1OCAyMi4yIEwgMTQuODIxIDIyLjIgQyAxOC44NDUgMjIuMiAyMS45MzUgMjAuNSAyMi44NzEgMTUuNSBDIDIzLjMzOSAxMy40IDIzLjE1MyAxMS43IDIyLjAyOSAxMC41IEMgMjEuNzQ4IDEwLjEgMjEuMjc5IDkuOCAyMC45MDUgOS41IEwgMjAuOTA1IDkuNSI+PC9wYXRoPgogICAgPHBhdGggZmlsbD0iIzAxMjE2OSIgZD0iTSAyMC45MDUgOS41IEMgMjEuMTg1IDcuNCAyMC45MDUgNiAxOS43ODIgNC43IEMgMTguNTY0IDMuMyAxNi40MTEgMi42IDEzLjY5NyAyLjYgTCA1LjczOSAyLjYgQyA1LjI3MSAyLjYgNC43MSAzLjEgNC42MTUgMy42IEwgMS4zMzkgMjUuOCBDIDEuMzM5IDI2LjIgMS42MiAyNi43IDIuMDg4IDI2LjcgTCA2Ljk1NiAyNi43IEwgOC4yNjcgMTguNCBMIDguMTczIDE4LjcgQyA4LjI2NyAxOC4xIDguNzM1IDE3LjcgOS4yOTYgMTcuNyBMIDExLjYzNiAxNy43IEMgMTYuMjI0IDE3LjcgMTkuNzgyIDE1LjcgMjAuOTA1IDEwLjEgQyAyMC44MTIgOS44IDIwLjkwNSA5LjcgMjAuOTA1IDkuNSI+PC9wYXRoPgogICAgPHBhdGggZmlsbD0iIzAwMzA4NyIgZD0iTSA5LjQ4NSA5LjUgQyA5LjU3NyA5LjIgOS43NjUgOC45IDEwLjA0NiA4LjcgQyAxMC4yMzIgOC43IDEwLjMyNiA4LjYgMTAuNTEzIDguNiBMIDE2LjY5MiA4LjYgQyAxNy40NDIgOC42IDE4LjE4OSA4LjcgMTguNzUzIDguOCBDIDE4LjkzOSA4LjggMTkuMTI3IDguOCAxOS4zMTQgOC45IEMgMTkuNTAxIDkgMTkuNjg4IDkgMTkuNzgyIDkuMSBDIDE5Ljg3NSA5LjEgMTkuOTY4IDkuMSAyMC4wNjMgOS4xIEMgMjAuMzQzIDkuMiAyMC42MjQgOS40IDIwLjkwNSA5LjUgQyAyMS4xODUgNy40IDIwLjkwNSA2IDE5Ljc4MiA0LjYgQyAxOC42NTggMy4yIDE2LjUwNiAyLjYgMTMuNzkgMi42IEwgNS43MzkgMi42IEMgNS4yNzEgMi42IDQuNzEgMyA0LjYxNSAzLjYgTCAxLjMzOSAyNS44IEMgMS4zMzkgMjYuMiAxLjYyIDI2LjcgMi4wODggMjYuNyBMIDYuOTU2IDI2LjcgTCA4LjI2NyAxOC40IEwgOS40ODUgOS41IFoiPjwvcGF0aD4KPC9zdmc+Cg" alt=""><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjMyIiB2aWV3Qm94PSIwIDAgMTAwIDMyIiB4bWxucz0iaHR0cDomI3gyRjsmI3gyRjt3d3cudzMub3JnJiN4MkY7MjAwMCYjeDJGO3N2ZyIgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pbllNaW4gbWVldCI+PHBhdGggZmlsbD0iIzAwMzA4NyIgZD0iTSAxMiA0LjkxNyBMIDQuMiA0LjkxNyBDIDMuNyA0LjkxNyAzLjIgNS4zMTcgMy4xIDUuODE3IEwgMCAyNS44MTcgQyAtMC4xIDI2LjIxNyAwLjIgMjYuNTE3IDAuNiAyNi41MTcgTCA0LjMgMjYuNTE3IEMgNC44IDI2LjUxNyA1LjMgMjYuMTE3IDUuNCAyNS42MTcgTCA2LjIgMjAuMjE3IEMgNi4zIDE5LjcxNyA2LjcgMTkuMzE3IDcuMyAxOS4zMTcgTCA5LjggMTkuMzE3IEMgMTQuOSAxOS4zMTcgMTcuOSAxNi44MTcgMTguNyAxMS45MTcgQyAxOSA5LjgxNyAxOC43IDguMTE3IDE3LjcgNi45MTcgQyAxNi42IDUuNjE3IDE0LjYgNC45MTcgMTIgNC45MTcgWiBNIDEyLjkgMTIuMjE3IEMgMTIuNSAxNS4wMTcgMTAuMyAxNS4wMTcgOC4zIDE1LjAxNyBMIDcuMSAxNS4wMTcgTCA3LjkgOS44MTcgQyA3LjkgOS41MTcgOC4yIDkuMzE3IDguNSA5LjMxNyBMIDkgOS4zMTcgQyAxMC40IDkuMzE3IDExLjcgOS4zMTcgMTIuNCAxMC4xMTcgQyAxMi45IDEwLjUxNyAxMy4xIDExLjIxNyAxMi45IDEyLjIxNyBaIj48L3BhdGg+PHBhdGggZmlsbD0iIzAwMzA4NyIgZD0iTSAzNS4yIDEyLjExNyBMIDMxLjUgMTIuMTE3IEMgMzEuMiAxMi4xMTcgMzAuOSAxMi4zMTcgMzAuOSAxMi42MTcgTCAzMC43IDEzLjYxNyBMIDMwLjQgMTMuMjE3IEMgMjkuNiAxMi4wMTcgMjcuOCAxMS42MTcgMjYgMTEuNjE3IEMgMjEuOSAxMS42MTcgMTguNCAxNC43MTcgMTcuNyAxOS4xMTcgQyAxNy4zIDIxLjMxNyAxNy44IDIzLjQxNyAxOS4xIDI0LjgxNyBDIDIwLjIgMjYuMTE3IDIxLjkgMjYuNzE3IDIzLjggMjYuNzE3IEMgMjcuMSAyNi43MTcgMjkgMjQuNjE3IDI5IDI0LjYxNyBMIDI4LjggMjUuNjE3IEMgMjguNyAyNi4wMTcgMjkgMjYuNDE3IDI5LjQgMjYuNDE3IEwgMzIuOCAyNi40MTcgQyAzMy4zIDI2LjQxNyAzMy44IDI2LjAxNyAzMy45IDI1LjUxNyBMIDM1LjkgMTIuNzE3IEMgMzYgMTIuNTE3IDM1LjYgMTIuMTE3IDM1LjIgMTIuMTE3IFogTSAzMC4xIDE5LjMxNyBDIDI5LjcgMjEuNDE3IDI4LjEgMjIuOTE3IDI1LjkgMjIuOTE3IEMgMjQuOCAyMi45MTcgMjQgMjIuNjE3IDIzLjQgMjEuOTE3IEMgMjIuOCAyMS4yMTcgMjIuNiAyMC4zMTcgMjIuOCAxOS4zMTcgQyAyMy4xIDE3LjIxNyAyNC45IDE1LjcxNyAyNyAxNS43MTcgQyAyOC4xIDE1LjcxNyAyOC45IDE2LjExNyAyOS41IDE2LjcxNyBDIDMwIDE3LjQxNyAzMC4yIDE4LjMxNyAzMC4xIDE5LjMxNyBaIj48L3BhdGg+PHBhdGggZmlsbD0iIzAwMzA4NyIgZD0iTSA1NS4xIDEyLjExNyBMIDUxLjQgMTIuMTE3IEMgNTEgMTIuMTE3IDUwLjcgMTIuMzE3IDUwLjUgMTIuNjE3IEwgNDUuMyAyMC4yMTcgTCA0My4xIDEyLjkxNyBDIDQzIDEyLjQxNyA0Mi41IDEyLjExNyA0Mi4xIDEyLjExNyBMIDM4LjQgMTIuMTE3IEMgMzggMTIuMTE3IDM3LjYgMTIuNTE3IDM3LjggMTMuMDE3IEwgNDEuOSAyNS4xMTcgTCAzOCAzMC41MTcgQyAzNy43IDMwLjkxNyAzOCAzMS41MTcgMzguNSAzMS41MTcgTCA0Mi4yIDMxLjUxNyBDIDQyLjYgMzEuNTE3IDQyLjkgMzEuMzE3IDQzLjEgMzEuMDE3IEwgNTUuNiAxMy4wMTcgQyA1NS45IDEyLjcxNyA1NS42IDEyLjExNyA1NS4xIDEyLjExNyBaIj48L3BhdGg+PHBhdGggZmlsbD0iIzAwOWNkZSIgZD0iTSA2Ny41IDQuOTE3IEwgNTkuNyA0LjkxNyBDIDU5LjIgNC45MTcgNTguNyA1LjMxNyA1OC42IDUuODE3IEwgNTUuNSAyNS43MTcgQyA1NS40IDI2LjExNyA1NS43IDI2LjQxNyA1Ni4xIDI2LjQxNyBMIDYwLjEgMjYuNDE3IEMgNjAuNSAyNi40MTcgNjAuOCAyNi4xMTcgNjAuOCAyNS44MTcgTCA2MS43IDIwLjExNyBDIDYxLjggMTkuNjE3IDYyLjIgMTkuMjE3IDYyLjggMTkuMjE3IEwgNjUuMyAxOS4yMTcgQyA3MC40IDE5LjIxNyA3My40IDE2LjcxNyA3NC4yIDExLjgxNyBDIDc0LjUgOS43MTcgNzQuMiA4LjAxNyA3My4yIDYuODE3IEMgNzIgNS42MTcgNzAuMSA0LjkxNyA2Ny41IDQuOTE3IFogTSA2OC40IDEyLjIxNyBDIDY4IDE1LjAxNyA2NS44IDE1LjAxNyA2My44IDE1LjAxNyBMIDYyLjYgMTUuMDE3IEwgNjMuNCA5LjgxNyBDIDYzLjQgOS41MTcgNjMuNyA5LjMxNyA2NCA5LjMxNyBMIDY0LjUgOS4zMTcgQyA2NS45IDkuMzE3IDY3LjIgOS4zMTcgNjcuOSAxMC4xMTcgQyA2OC40IDEwLjUxNyA2OC41IDExLjIxNyA2OC40IDEyLjIxNyBaIj48L3BhdGg+PHBhdGggZmlsbD0iIzAwOWNkZSIgZD0iTSA5MC43IDEyLjExNyBMIDg3IDEyLjExNyBDIDg2LjcgMTIuMTE3IDg2LjQgMTIuMzE3IDg2LjQgMTIuNjE3IEwgODYuMiAxMy42MTcgTCA4NS45IDEzLjIxNyBDIDg1LjEgMTIuMDE3IDgzLjMgMTEuNjE3IDgxLjUgMTEuNjE3IEMgNzcuNCAxMS42MTcgNzMuOSAxNC43MTcgNzMuMiAxOS4xMTcgQyA3Mi44IDIxLjMxNyA3My4zIDIzLjQxNyA3NC42IDI0LjgxNyBDIDc1LjcgMjYuMTE3IDc3LjQgMjYuNzE3IDc5LjMgMjYuNzE3IEMgODIuNiAyNi43MTcgODQuNSAyNC42MTcgODQuNSAyNC42MTcgTCA4NC4zIDI1LjYxNyBDIDg0LjIgMjYuMDE3IDg0LjUgMjYuNDE3IDg0LjkgMjYuNDE3IEwgODguMyAyNi40MTcgQyA4OC44IDI2LjQxNyA4OS4zIDI2LjAxNyA4OS40IDI1LjUxNyBMIDkxLjQgMTIuNzE3IEMgOTEuNCAxMi41MTcgOTEuMSAxMi4xMTcgOTAuNyAxMi4xMTcgWiBNIDg1LjUgMTkuMzE3IEMgODUuMSAyMS40MTcgODMuNSAyMi45MTcgODEuMyAyMi45MTcgQyA4MC4yIDIyLjkxNyA3OS40IDIyLjYxNyA3OC44IDIxLjkxNyBDIDc4LjIgMjEuMjE3IDc4IDIwLjMxNyA3OC4yIDE5LjMxNyBDIDc4LjUgMTcuMjE3IDgwLjMgMTUuNzE3IDgyLjQgMTUuNzE3IEMgODMuNSAxNS43MTcgODQuMyAxNi4xMTcgODQuOSAxNi43MTcgQyA4NS41IDE3LjQxNyA4NS43IDE4LjMxNyA4NS41IDE5LjMxNyBaIj48L3BhdGg+PHBhdGggZmlsbD0iIzAwOWNkZSIgZD0iTSA5NS4xIDUuNDE3IEwgOTEuOSAyNS43MTcgQyA5MS44IDI2LjExNyA5Mi4xIDI2LjQxNyA5Mi41IDI2LjQxNyBMIDk1LjcgMjYuNDE3IEMgOTYuMiAyNi40MTcgOTYuNyAyNi4wMTcgOTYuOCAyNS41MTcgTCAxMDAgNS42MTcgQyAxMDAuMSA1LjIxNyA5OS44IDQuOTE3IDk5LjQgNC45MTcgTCA5NS44IDQuOTE3IEMgOTUuNCA0LjkxNyA5NS4yIDUuMTE3IDk1LjEgNS40MTcgWiI+PC9wYXRoPjwvc3ZnPg" alt=""></button>
-                <button id="gpay"><img src="https://indiapressrelease.com/wp-content/uploads/2020/11/Google-Pay-.jpg" alt=""></button>
-            </div>>
+    </div>
+            <!-- trial -->
+            <select name="" id="Availability">
+                <option value="">Availability</option>
+            </select>
         </div>
-        <h3 id="featuredItemsHeading">Featured Collection</h3>
-        <div id="featuredItems">
-            <div>    <img src="https://cdn.shopify.com/s/files/1/0627/7388/7215/products/010100309-1__20452_823x.jpg?v=1645111798" alt="">
-                <p id="itemDescription">10mm Palette Earrings (14K Gold)</p>
-                <p id="cartProducts-Price">$12.00</p>
-            </div>
-<<<<<<< HEAD
-            <div>    <img src="https://cdn.shopify.com/s/files/1/0627/7388/7215/products/010100309-1__20452_823x.jpg?v=1645111798" alt="">
-                <p id="itemDescription">10mm Palette Earrings (14K Gold)</p>
-                <p id="cartProducts-Price">$12.00</p>
-            </div>
-            <div>    <img src="https://cdn.shopify.com/s/files/1/0627/7388/7215/products/010100309-1__20452_823x.jpg?v=1645111798" alt="">
-                <p id="itemDescription">10mm Palette Earrings (14K Gold)</p>
-                <p id="cartProducts-Price">$12.00</p>
-            </div>
-            <div>    <img src="https://cdn.shopify.com/s/files/1/0627/7388/7215/products/010100309-1__20452_823x.jpg?v=1645111798" alt="">
-                <p id="itemDescription">10mm Palette Earrings (14K Gold)</p>
-                <p id="cartProducts-Price">$12.00</p>
-=======
-            <div>    <img src="https://cdn.shopify.com/s/files/1/0627/7388/7215/products/L401025-7-2_823x.jpg?v=1645729655" alt="">
-                <p id="itemDescription">Ambition stone ring | Haze</p>
-                <p id="cartProducts-Price">$20.00</p>
-            </div>
-            <div>    <img src="https://cdn.shopify.com/s/files/1/0627/7388/7215/products/040400061_2_of_3__80051.jpg?v=1645112102" alt="">
-                <p id="itemDescription">Geode Stone Ring | Blue</p>
-                <p id="cartProducts-Price">$18.00</p>
-            </div>
-            <div>    <img src="https://cdn.shopify.com/s/files/1/0627/7388/7215/products/040400091-B-1__10102_823x.jpg?v=1645113889" alt="">
-                <p id="itemDescription">Pixum Wide Eye Stone Ring | Blue</p>
-                <p id="cartProducts-Price">$16.00</p>
->>>>>>> main
+        <div id="sort">
+            <h5>Sort By:</h5>
+            <select name="" id="sortby" onchange="SortData()">
+                <option value="normal">Featured</option>
+                <option value="A-Z">Alphabetically,A-Z</option>
+                <option value="Z-A">Alphabetically,Z-A</option>
+                <option value="lth">Low to High</option>
+                <option value="htl">High to Low</option>
+            </select>
+            <h5>1655 Products</h5>
+        </div>
+
+    </div>
+    
+    <div id="productbox">
+
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+        <div>
+            <h4>Info</h4>
+            <p>Search</p>
+            <p>Terms of Service</p>
+            <p>Refund policy</p>
+            <p>Wholesale</p>
+            <p>Wholesale Signup Form</p>
+            <p>Shipping</p>
+            <h4>Subscribe to our emails</h4>
+            <div id="mailBox">
+                <div><a href="shop-all.html">Email</a></div>
+                <div><i class="fa-solid fa-arrow-right"></i></div>
             </div>
         </div>
-        <div id="lastViewAll"> <a href="shop.html" >View all</a> </div>
+        <div id="contacts">
+            <h4>Contact Us!</h4>
+            <p>Need to talk? Reach us via email, phone or text!</p>
+            <p id="pBold">Email: Customerservice@Lovoda.com</p>
+            <p id="pBold">Phone: (443) 500-1200</p>
+            <p>**Msg &data rates may apply</p>
+
+            <div id="socialMedia">
+                
+            </div>
+        </div>
     </div>
     <hr>
-
-
-   <!-- footer -->
-   <div id="footer">
-    <div>
-        <h4>Info</h4>
-        <p>Search</p>
-        <p>Terms of Service</p>
-        <p>Refund policy</p>
-        <p>Wholesale</p>
-        <p>Wholesale Signup Form</p>
-        <p>Shipping</p>
-        <h4>Subscribe to our emails</h4>
-        <div id="mailBox">
-            <div><a href="">Email</a></div>
-            <div><i class="fa-solid fa-arrow-right"></i></div>
-        </div>
-    </div>
-    <div id="contacts">
-        <h4>Contact Us!</h4>
-        <p>Need to talk? Reach us via email, phone or text!</p>
-        <p id="pBold">Email: Customerservice@Lovoda.com</p>
-        <p id="pBold">Phone: (443) 500-1200</p>
-        <p>**Msg &data rates may apply</p>
-
-        <div id="socialMedia">
-            
-        </div>
-    </div>
-</div>
-<hr>
-
-<!-- End payment methods -->
+<!-- End Payment Methods -->
 <div id="paymentMethod">
     <svg class="icon icon--full-color" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 38 24" width="38" height="24" aria-labelledby="pi-afterpay"><title id="pi-afterpay">Afterpay</title><path fill="#b2fce4" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path><path d="m27.4 6.8-2.7-1.6-2.7-1.6c-1.8-1-4.1.3-4.1 2.4v.4c0 .2.1.4.3.5l1.3.7c.4.2.8-.1.8-.5v-.8c0-.4.4-.7.8-.5l2.5 1.4 2.4 1.5c.4.2.4.7 0 .9l-2.5 1.4-2.5 1.6c-.4.2-.8-.1-.8-.5v-.4c0-2.1-2.3-3.4-4.1-2.4l-2.7 1.6-2.7 1.6c-1.8 1-1.8 3.7 0 4.7l2.7 1.6 2.7 1.6c1.8 1 4.1-.3 4.1-2.4v-.4c0-.2-.1-.4-.3-.5l-1.3-.7c-.4-.2-.8.1-.8.5v.8c0 .4-.4.7-.8.5l-2.5-1.4-2.5-1.5c-.4-.2-.4-.7 0-.9l2.5-1.4 2.5-1.4c.4-.2.8.1.8.5v.4c0 2.1 2.3 3.4 4.1 2.4l2.7-1.6 2.7-1.6c1.9-1.2 1.9-3.8.1-4.9z"></path></svg>
     <svg class="icon icon--full-color" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 38 24" width="38" height="24" aria-labelledby="pi-american_express"><title id="pi-american_express">American Express</title><g fill="none"><path fill="#000" d="M35,0 L3,0 C1.3,0 0,1.3 0,3 L0,21 C0,22.7 1.4,24 3,24 L35,24 C36.7,24 38,22.7 38,21 L38,3 C38,1.3 36.6,0 35,0 Z" opacity=".07"></path><path fill="#006FCF" d="M35,1 C36.1,1 37,1.9 37,3 L37,21 C37,22.1 36.1,23 35,23 L3,23 C1.9,23 1,22.1 1,21 L1,3 C1,1.9 1.9,1 3,1 L35,1"></path><path fill="#FFF" d="M8.971,10.268 L9.745,12.144 L8.203,12.144 L8.971,10.268 Z M25.046,10.346 L22.069,10.346 L22.069,11.173 L24.998,11.173 L24.998,12.412 L22.075,12.412 L22.075,13.334 L25.052,13.334 L25.052,14.073 L27.129,11.828 L25.052,9.488 L25.046,10.346 L25.046,10.346 Z M10.983,8.006 L14.978,8.006 L15.865,9.941 L16.687,8 L27.057,8 L28.135,9.19 L29.25,8 L34.013,8 L30.494,11.852 L33.977,15.68 L29.143,15.68 L28.065,14.49 L26.94,15.68 L10.03,15.68 L9.536,14.49 L8.406,14.49 L7.911,15.68 L4,15.68 L7.286,8 L10.716,8 L10.983,8.006 Z M19.646,9.084 L17.407,9.084 L15.907,12.62 L14.282,9.084 L12.06,9.084 L12.06,13.894 L10,9.084 L8.007,9.084 L5.625,14.596 L7.18,14.596 L7.674,13.406 L10.27,13.406 L10.764,14.596 L13.484,14.596 L13.484,10.661 L15.235,14.602 L16.425,14.602 L18.165,10.673 L18.165,14.603 L19.623,14.603 L19.647,9.083 L19.646,9.084 Z M28.986,11.852 L31.517,9.084 L29.695,9.084 L28.094,10.81 L26.546,9.084 L20.652,9.084 L20.652,14.602 L26.462,14.602 L28.076,12.864 L29.624,14.602 L31.499,14.602 L28.987,11.852 L28.986,11.852 Z"></path></g></svg>
@@ -188,7 +137,10 @@
     <svg class="icon icon--full-color" viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" role="img" width="38" height="24" aria-labelledby="pi-visa"><title id="pi-visa">Visa</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path><path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path><path d="M28.3 10.1H28c-.4 1-.7 1.5-1 3h1.9c-.3-1.5-.3-2.2-.6-3zm2.9 5.9h-1.7c-.1 0-.1 0-.2-.1l-.2-.9-.1-.2h-2.4c-.1 0-.2 0-.2.2l-.3.9c0 .1-.1.1-.1.1h-2.1l.2-.5L27 8.7c0-.5.3-.7.8-.7h1.5c.1 0 .2 0 .2.2l1.4 6.5c.1.4.2.7.2 1.1.1.1.1.1.1.2zm-13.4-.3l.4-1.8c.1 0 .2.1.2.1.7.3 1.4.5 2.1.4.2 0 .5-.1.7-.2.5-.2.5-.7.1-1.1-.2-.2-.5-.3-.8-.5-.4-.2-.8-.4-1.1-.7-1.2-1-.8-2.4-.1-3.1.6-.4.9-.8 1.7-.8 1.2 0 2.5 0 3.1.2h.1c-.1.6-.2 1.1-.4 1.7-.5-.2-1-.4-1.5-.4-.3 0-.6 0-.9.1-.2 0-.3.1-.4.2-.2.2-.2.5 0 .7l.5.4c.4.2.8.4 1.1.6.5.3 1 .8 1.1 1.4.2.9-.1 1.7-.9 2.3-.5.4-.7.6-1.4.6-1.4 0-2.5.1-3.4-.2-.1.2-.1.2-.2.1zm-3.5.3c.1-.7.1-.7.2-1 .5-2.2 1-4.5 1.4-6.7.1-.2.1-.3.3-.3H18c-.2 1.2-.4 2.1-.7 3.2-.3 1.5-.6 3-1 4.5 0 .2-.1.2-.3.2M5 8.2c0-.1.2-.2.3-.2h3.4c.5 0 .9.3 1 .8l.9 4.4c0 .1 0 .1.1.2 0-.1.1-.1.1-.1l2.1-5.1c-.1-.1 0-.2.1-.2h2.1c0 .1 0 .1-.1.2l-3.1 7.3c-.1.2-.1.3-.2.4-.1.1-.3 0-.5 0H9.7c-.1 0-.2 0-.2-.2L7.9 9.5c-.2-.2-.5-.5-.9-.6-.6-.3-1.7-.5-1.9-.5L5 8.2z" fill="#142688"></path></svg>
 </div>
 <p id="copywrite">© 2022, Lovoda Powered by Shopify</p>
+  
+    
+
 </body>
 </html>
 
-<script src="checkout.js"></script>
+<script src="shop.js"></script>
