@@ -100,7 +100,6 @@ function deletedata(ele){
     localStorage.setItem("cartdata",JSON.stringify(productdata));
     displaydata(productdata);
     displayprice(productdata);
-<<<<<<< HEAD
 }
 
 
@@ -111,6 +110,3 @@ function deletedata(ele){
 
 
 
-=======
-}
->>>>>>> main
