@@ -122,13 +122,9 @@ hr{
     align-items: center;
     padding: 8px;
 }
-<<<<<<< HEAD
-
-=======
 #minus,#plus{
     cursor: pointer;
 }
->>>>>>> main
 #cartProducts-deleteBtn{
     background-color: white;
     align-items: center;
@@ -155,39 +151,24 @@ hr{
     height: 250px;
 }
 #lastViewAll{
-<<<<<<< HEAD
-    width: 150px;
-=======
     width: 120px;
     height: 45px;
->>>>>>> main
     display: flex;
     margin: auto;
     text-align: center;
     background-color: black;
     margin-top: 3%;
     margin-bottom: 8%;
-<<<<<<< HEAD
-    
-    color: white;
-    text-decoration: none;
-    text-align: center;
-=======
     color: white;
     text-decoration: none;
     text-align: center;
     padding: 5px;
->>>>>>> main
 }
 #lastViewAll a{
     color: white;
     text-decoration: none;
     text-align: center;
-<<<<<<< HEAD
-    padding: 10px;
-=======
     margin: auto;
->>>>>>> main
 }
 
 /* checkout Payment Css */
@@ -231,11 +212,7 @@ hr{
 #checkoutTextBox{
     text-align: right;
 }
-<<<<<<< HEAD
-#checkOutBtn>button{
-=======
 #checkOutBtn button{
->>>>>>> main
     width: 340px;
     height: 54px;
     margin-bottom: 9px;
@@ -243,11 +220,7 @@ hr{
 #checkout{
     font-size: 15px;
 }
-<<<<<<< HEAD
-#checkOutBtn>#checkout{
-=======
 #checkOutBtn #checkout{
->>>>>>> main
     color: white;
     background-color: black;
     cursor: pointer;

@@ -81,12 +81,20 @@ function addqty(ele){
     displayprice(productdata);
 }
 function subtractqty(ele){
-    ele.qty--;
+    if(ele.qty>1){
+        ele.qty--;
     document.getElementById("num").innerText = ele.qty;
     console.log(ele.qty);
     localStorage.setItem("cartdata",JSON.stringify(productdata));
     displaydata(productdata);
     displayprice(productdata);
+    }
+    // ele.qty--;
+    // document.getElementById("num").innerText = ele.qty;
+    // console.log(ele.qty);
+    // localStorage.setItem("cartdata",JSON.stringify(productdata));
+    // displaydata(productdata);
+    // displayprice(productdata);
 }
 function displayprice(data){
     var overalltotal = data.reduce(function(acc,ele){
