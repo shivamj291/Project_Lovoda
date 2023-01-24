@@ -19,5 +19,5 @@
 
         
 # Pages and Features:- 
-       ![lovoda](https://user-images.githubusercontent.com/113718053/214269925-534052b5-d231-424d-9a48-131af6b35d5a.gif)
+![lovoda](https://user-images.githubusercontent.com/113718053/214269925-534052b5-d231-424d-9a48-131af6b35d5a.gif)
        
