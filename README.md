@@ -1,4 +1,4 @@
-# Project_Lovoda
+# Lovoda Clone
 # Team Details:-
         1. Pratik Patil.
         2. Aditya Raj Benn.
