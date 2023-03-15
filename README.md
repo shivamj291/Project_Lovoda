@@ -10,6 +10,8 @@
   Lovoda is an e-commerce website of a Jewellery products like necklaces, ear-rings, bracelets, etc.
   Project was collaborative project and we tried implemented most of the functionality as same as original site.
   
+  By using the tech HTML,CSS,JAVA-SCRIPT,LOCAL STORAGE
+  
   Original Website Link :- https://lovoda.com/
   
   Netlify Link :- https://comfy-speculoos-0dfe32.netlify.app/
