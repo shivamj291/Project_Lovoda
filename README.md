@@ -14,7 +14,7 @@
   
   Original Website Link :- https://lovoda.com/
   
-  Netlify Link :- https://comfy-speculoos-0dfe32.netlify.app/
+  vercel Link :- https://lovoda-project.vercel.app/
   
 # Tech Stacks:- 
         HTML, CSS, JavaScripts 
